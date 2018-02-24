@@ -2,6 +2,11 @@
     <head>
     </head>
     <body>
-        <p>Üdvözlet mindenkinek!</p>
+        <p class="udv" onclick="piros()">Üdvözlet mindenkinek!</p>
+        <script>
+        function piros() {
+            document.getElementsByClassName("udv")[0].style.color = "red";
+        }
+        </script>
     </body>
 </html>
