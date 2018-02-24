@@ -3,10 +3,13 @@
     </head>
     <body>
         <p class="udv" onclick="piros()">Üdvözlet mindenkinek!</p>
+        <p class="udv" onclick="piros()">Üdvözlet mindenkinek!</p>
         <script>
-        function piros() {
-            document.getElementsByClassName("udv")[0].style.color = "red";
-        }
+            function piros() {
+                x = document.getElementsByClassName("udv");
+                x[0].style.color = "red";
+                x[1].style.color = "red";
+            }
         </script>
     </body>
 </html>
