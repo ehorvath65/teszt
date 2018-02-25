@@ -2,13 +2,13 @@
     <head>
     </head>
     <body>
-        <p class="udv" onclick="piros()">Üdvözlet mindenkinek!</p>
-        <p class="udv" onclick="piros()">Üdvözlet mindenkinek!</p>
+        <p class="udv" onclick="kapcsolo()">Üdvözlet mindenkinek!</p>
         <script>
-            function piros() {
+            var szin = "red";
+            function kapcsolo() {
                 x = document.getElementsByClassName("udv");
-                x[0].style.color = "red";
-                x[1].style.color = "red";
+                x[0].style.color = szin;
+                szin = szin === "red" ? "black" : "red";
             }
         </script>
     </body>
